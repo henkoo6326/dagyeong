@@ -1,0 +1,61 @@
+/* Product framing: source-pixel subject bounds, visually reviewed at 1920/390px.
+   Scoped to catalogue thumbnails; source photography and product detail views stay intact. */
+.catalogue-card .catalogue-image{position:relative;isolation:isolate;background:var(--photo-ground,#f4f4f4)}
+.catalogue-photo{position:absolute;width:var(--product-width,100%);left:var(--product-left,0%);top:var(--product-top,0%);aspect-ratio:var(--source-aspect,1);transform-origin:50% 84%;transition:transform .45s ease}
+.catalogue-card .catalogue-image .catalogue-photo img{position:relative;z-index:1;display:block;max-width:none;width:100%;height:100%;object-fit:fill;transform:none;transition:none}
+.catalogue-photo .photo-edge{position:absolute;width:100%;height:100%;background-image:var(--photo-source);background-size:100% 100%;pointer-events:none}
+.catalogue-card:hover .catalogue-photo{transform:scale(1.025)}
+.catalogue-card--wide{grid-column:span 2}
+.catalogue-card--wide .catalogue-image{aspect-ratio:2/1!important}
+.catalogue-image:has(img[src$="catalogue-photo-pot.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/catalogue-photo-pot.jpg");--source-aspect:0.8;--product-width:97.938%;--product-left:0.737%;--product-top:-14.918%}
+.catalogue-image:has(img[src$="catalogue-refined-solo.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/catalogue-refined-solo.jpg");--source-aspect:1.0;--product-width:99.490%;--product-left:-2.232%;--product-top:13.064%}
+.catalogue-image:has(img[src$="curated-folder-27.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-27.jpg");--source-aspect:0.8;--product-width:96.774%;--product-left:2.871%;--product-top:-11.806%}
+.catalogue-image:has(img[src$="curated-new-dish.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-new-dish.jpg");--source-aspect:1.0;--product-width:93.385%;--product-left:2.700%;--product-top:13.588%}
+.catalogue-image:has(img[src$="curated-folder-13.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-13.jpg");--source-aspect:1.0;--product-width:116.364%;--product-left:-4.807%;--product-top:-3.273%}
+.catalogue-image:has(img[src$="curated-folder-11.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-11.jpg");--source-aspect:1.0;--product-width:103.976%;--product-left:-1.780%;--product-top:-3.131%}
+.catalogue-image:has(img[src$="curated-new-bowl.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-new-bowl.jpg");--source-aspect:1.0;--product-width:99.432%;--product-left:0.085%;--product-top:3.162%}
+.catalogue-image:has(img[src$="curated-folder-10.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-10.jpg");--source-aspect:1.0;--product-width:89.888%;--product-left:5.236%;--product-top:2.382%}
+.catalogue-image:has(img[src$="curated-folder-57.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-57.jpg");--source-aspect:0.8;--product-width:92.086%;--product-left:0.365%;--product-top:4.345%}
+.catalogue-image:has(img[src$="catalogue-photo-linen.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/catalogue-photo-linen.jpg");--source-aspect:0.8;--product-width:83.818%;--product-left:8.300%;--product-top:0.601%}
+.catalogue-image:has(img[src$="catalogue-expanded-napkin.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/catalogue-expanded-napkin.jpg");--source-aspect:0.8;--product-width:76.868%;--product-left:11.566%;--product-top:3.961%}
+.catalogue-image:has(img[src$="curated-new-rectangular-tray.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-new-rectangular-tray.jpg");--source-aspect:1.0;--product-width:97.990%;--product-left:1.593%;--product-top:9.234%}
+.catalogue-image:has(img[src$="curated-new-round-tray.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-new-round-tray.jpg");--source-aspect:1.0;--product-width:112.570%;--product-left:-6.285%;--product-top:-6.056%}
+.catalogue-image:has(img[src$="curated-folder-09.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-09.jpg");--source-aspect:1.0;--product-width:94.987%;--product-left:2.507%;--product-top:9.150%}
+.catalogue-image:has(img[src$="curated-folder-22.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-22.jpg");--source-aspect:0.8;--product-width:93.596%;--product-left:2.734%;--product-top:-9.596%}
+.catalogue-image:has(img[src$="feedback-leaf-notes-20261018.webp"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/feedback-leaf-notes-20261018.webp");--source-aspect:1.0;--product-width:96.000%;--product-left:2.432%;--product-top:2.016%}
+.catalogue-image:has(img[src$="feedback-roasted-notes-20261018.webp"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/feedback-roasted-notes-20261018.webp");--source-aspect:1.0;--product-width:96.000%;--product-left:2.432%;--product-top:2.016%}
+.catalogue-image:has(img[src$="catalogue-refined-barley.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/catalogue-refined-barley.jpg");--source-aspect:1.0;--product-width:96.000%;--product-left:2.432%;--product-top:2.016%}
+.catalogue-image:has(img[src$="feedback-white-tea-notes-20261018.webp"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/feedback-white-tea-notes-20261018.webp");--source-aspect:1.0;--product-width:96.000%;--product-left:2.432%;--product-top:2.016%}
+.catalogue-image:has(img[src$="catalogue-photo-gift.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/catalogue-photo-gift.jpg");--source-aspect:1.0;--product-width:105.714%;--product-left:-3.280%;--product-top:-4.060%}
+.catalogue-image:has(img[src$="curated-folder-32.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-32.jpg");--source-aspect:0.8;--product-width:95.477%;--product-left:1.020%;--product-top:-8.016%}
+.catalogue-image:has(img[src$="curated-folder-04.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-04.jpg");--source-aspect:1.0;--product-width:90.069%;--product-left:4.965%;--product-top:8.522%}
+.catalogue-image:has(img[src$="curated-folder-01.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-01.jpg");--source-aspect:1.0;--product-width:112.100%;--product-left:-7.899%;--product-top:-11.733%}
+.catalogue-image:has(img[src$="curated-folder-03.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-03.jpg");--source-aspect:1.0;--product-width:100.122%;--product-left:-1.012%;--product-top:-62.779%}
+.catalogue-image:has(img[src$="curated-folder-07.jpg"]){--photo-ground:#f5f7f8;--photo-source:url("../assets/collection-toned/curated-folder-07.jpg");--source-aspect:1.0;--product-width:96.089%;--product-left:2.484%;--product-top:-48.603%}
+.photo-edge[data-x="-1"][data-y="-1"]{left:-100%;top:-100%;background-size:2000% 2000%;background-position:left top;transform:scale(-1,-1)}
+.photo-edge[data-x="0"][data-y="-1"]{left:0%;top:-100%;background-size:100% 2000%;background-position:center top;transform:scale(1,-1)}
+.photo-edge[data-x="1"][data-y="-1"]{left:100%;top:-100%;background-size:2000% 2000%;background-position:right top;transform:scale(-1,-1)}
+.photo-edge[data-x="-1"][data-y="0"]{left:-100%;top:0%;background-size:2000% 100%;background-position:left center;transform:scale(-1,1)}
+.photo-edge[data-x="1"][data-y="0"]{left:100%;top:0%;background-size:2000% 100%;background-position:right center;transform:scale(-1,1)}
+.photo-edge[data-x="-1"][data-y="1"]{left:-100%;top:100%;background-size:2000% 2000%;background-position:left bottom;transform:scale(-1,-1)}
+.photo-edge[data-x="0"][data-y="1"]{left:0%;top:100%;background-size:100% 2000%;background-position:center bottom;transform:scale(1,-1)}
+.photo-edge[data-x="1"][data-y="1"]{left:100%;top:100%;background-size:2000% 2000%;background-position:right bottom;transform:scale(-1,-1)}
+@media(prefers-reduced-motion:reduce){.catalogue-card .catalogue-image img{transition:none}}
+
+.catalogue:not(.category-catalogue) .catalogue-interlude--main{grid-column:span 1;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start}
+.catalogue:not(.category-catalogue) .catalogue-interlude--main img{width:100%;height:auto;aspect-ratio:1.7;object-fit:cover}
+.catalogue:not(.category-catalogue) .catalogue-interlude--main>div{padding:24px}
+.catalogue:not(.category-catalogue) .catalogue-interlude--main h3{font-size:24px}
+.product-related .catalogue-grid:has(.catalogue-card--wide){grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1100px){.catalogue:not(.category-catalogue) .catalogue-interlude--main{grid-column:span 1}}
+@media(max-width:760px){.product-related .catalogue-grid:has(.catalogue-card--wide){grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Blend only the empty outer border into its continued edge pixels. */
+.catalogue-photo img{mask-image:linear-gradient(to right,transparent,#000 2%,#000 98%,transparent),linear-gradient(to bottom,transparent,#000 2%,#000 98%,transparent);mask-composite:intersect}
+.catalogue-photo .photo-edge[data-x="-1"]{width:104%}
+.catalogue-photo .photo-edge[data-x="1"]{left:96%;width:104%}
+.catalogue-photo .photo-edge[data-y="-1"]{height:104%}
+.catalogue-photo .photo-edge[data-y="1"]{top:96%;height:104%}
+@media(prefers-reduced-motion:reduce){.catalogue-photo{transition:none}}
+
+/* Smooth the magnified empty border texture without softening product pixels. */
+.catalogue-photo .photo-edge{filter:blur(8px)}

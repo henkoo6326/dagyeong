@@ -1,0 +1,120 @@
+/* One page-entry rhythm, shared with the B editorial pages. */
+.page-intro{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-top:56px}
+.page-intro .breadcrumb{grid-column:1/-1;margin:0 0 12px}
+.page-intro h1{grid-column:1/span 7;font-size:64px;line-height:1.06;letter-spacing:-.045em;margin:0}
+.page-intro>p,.page-intro>.collection-intro{grid-column:9/span 4;align-self:end;font-size:18px;line-height:1.5;margin:0;max-width:440px}
+.product-crumb{margin-top:56px;margin-bottom:36px}
+.collection-feature{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:64px;margin-bottom:96px}
+.collection-feature>figure{grid-column:1/span 6;align-self:start}
+.collection-feature>div{grid-column:8/span 5;align-self:center}
+.collection-feature img{height:auto;object-fit:contain}
+.collection-feature figcaption,.collection-feature .feature-note{font-size:13px;line-height:1.5;margin-top:12px;color:#666}
+.collection-feature h2{font-size:32px;line-height:1.15;max-width:12em}
+.collection-feature .feature-note{max-width:32em;margin-top:20px}
+.category-doorways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:32px}
+.category-doorways img{aspect-ratio:4/5;object-fit:contain}
+.category-doorways span{display:block;font-size:14px;margin-top:12px}
+.category-doorways a:hover span{text-decoration:underline;text-underline-offset:5px}
+.catalogue{margin-top:64px;margin-bottom:112px;scroll-margin-top:100px}
+.catalogue-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:24px}
+.catalogue-bar h2{font-size:26px}.catalogue-bar output{font-size:12px;color:#666;white-space:nowrap}
+.catalogue-filters{display:flex;gap:24px;flex-wrap:wrap}
+.catalogue-filters button{border:0;border-bottom:1px solid transparent;background:none;padding:6px 0;font-size:14px;color:#666}
+.catalogue-filters button[aria-pressed="true"]{color:#111;border-color:#111}
+.catalogue-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #ddd;border-left:1px solid #ddd;gap:0}
+.catalogue-card,.catalogue-interlude{min-width:0;border-right:1px solid #ddd;border-bottom:1px solid #ddd}
+.catalogue-card{display:flex;flex-direction:column;background:#fff}
+.catalogue-card .catalogue-image{overflow:hidden;aspect-ratio:1;background:#f4f4f4}
+.catalogue-card img{width:100%;height:100%;object-fit:contain;transition:transform .45s ease}
+.catalogue-card:hover img{transform:scale(1.025)}
+.catalogue-card:focus-visible{outline-offset:-4px;position:relative;z-index:1}
+.catalogue-card .catalogue-caption{padding:22px 24px 28px;min-height:108px}
+.catalogue-caption h3{font-size:20px;line-height:1.2;letter-spacing:-.025em}
+.catalogue-caption p{font-size:12px;line-height:1.5;margin-top:8px;color:#666}
+.catalogue-interlude{grid-column:span 2;display:flex;flex-direction:column;justify-content:space-between;background:#f5f5f5}
+.catalogue-interlude img{width:100%;height:auto;object-fit:contain}
+.catalogue-interlude>div{padding:28px 32px}
+.catalogue-interlude h3{font-size:28px;line-height:1.15}.catalogue-interlude p{font-size:14px;max-width:34em;margin-top:12px}
+.catalogue-interlude .text-link{margin-top:22px}
+.catalogue-interlude--room{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.catalogue-interlude--room>div{padding:24px}.catalogue-interlude--room h3{font-size:26px}
+.category-catalogue .catalogue-interlude--room{display:flex;align-items:stretch}
+.catalogue-grid>[hidden]{display:none}
+.collection-ending{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-block:112px}
+.collection-ending>div{grid-column:2/span 4;align-self:center}.collection-ending>figure{grid-column:7/span 6}
+.collection-ending h2{font-size:38px;max-width:10em}.collection-ending p{font-size:16px;max-width:27em;margin-top:24px}.collection-ending .text-link{margin-top:24px}
+.collection-ending img{height:auto;object-fit:contain}
+.product-intro .product-sub{margin-bottom:28px}
+.product-gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-block:112px}
+.product-gallery .gallery-large{grid-column:1/span 7;grid-row:1/span 2;align-self:start}
+.product-gallery .gallery-small{grid-column:9/span 4;align-self:start}
+.product-gallery .gallery-copy{grid-column:9/span 4;align-self:start;margin-top:24px}
+.product-gallery img{height:auto;object-fit:contain}
+.product-gallery figcaption{font-size:12px;line-height:1.5;color:#666;margin-top:12px}
+.product-gallery h2{font-size:32px;line-height:1.15}.product-gallery p{font-size:16px;line-height:1.6;margin-top:20px}
+.product-related{margin-bottom:112px}.product-related .catalogue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.category-catalogue .catalogue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.category-catalogue .catalogue-interlude{grid-column:span 1}
+@media(min-width:761px) and (max-width:1100px){
+ .page-intro h1{font-size:48px}.page-intro>p,.page-intro>.collection-intro{grid-column:8/span 5;font-size:17px}
+ .catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.collection-feature>div{grid-column:7/span 6}
+ .category-doorways{gap:12px}.catalogue-filters{gap:18px}.collection-ending>div{grid-column:1/span 5}.product-gallery .gallery-small,.product-gallery .gallery-copy{grid-column:8/span 5}
+}
+@media(max-width:760px){
+ .page-intro{padding-top:32px;gap:22px;grid-template-columns:1fr}.page-intro .breadcrumb{margin:0 0 6px}
+ .page-intro h1{grid-column:1;font-size:40px;line-height:1.08}.page-intro>p,.page-intro>.collection-intro{grid-column:1;font-size:17px;max-width:340px}
+ .product-crumb{margin-top:32px;margin-bottom:28px}
+ .collection-feature{display:block;margin-top:40px;margin-bottom:56px}.collection-feature>div{margin-top:32px}.collection-feature h2{font-size:28px}
+ .category-doorways{gap:12px;margin-top:24px}.category-doorways span{font-size:13px}
+ .catalogue{margin-block:48px 64px}.catalogue-bar{align-items:flex-start;gap:16px}.catalogue-filters{gap:10px 20px}.catalogue-filters button{font-size:13px}.catalogue-bar output{padding-top:7px}
+ .catalogue-grid,.product-related .catalogue-grid,.category-catalogue .catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.category-catalogue .catalogue-interlude{grid-column:span 1}
+ .catalogue-card .catalogue-caption{padding:16px 14px 20px;min-height:104px}.catalogue-caption h3{font-size:18px}.catalogue-caption p{font-size:11px}
+ .catalogue-interlude>div{padding:24px}.catalogue-interlude h3{font-size:26px}
+ .collection-ending{display:flex;flex-direction:column-reverse;gap:28px;margin-block:64px}.collection-ending>div{align-self:flex-start}.collection-ending h2{font-size:32px}
+ .product-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px;margin-block:64px}
+ .product-gallery .gallery-large{grid-column:1/-1;grid-row:auto}.product-gallery .gallery-small{grid-column:1/-1;grid-row:auto;width:65%;margin-left:auto}.product-gallery .gallery-copy{grid-column:1/-1;grid-row:auto;margin-top:0;max-width:32em}
+ .product-gallery h2{font-size:24px}.product-gallery p{font-size:14px;margin-top:16px}.product-related{margin-bottom:64px}
+}
+@media(prefers-reduced-motion:reduce){.catalogue-card img{transition:none}}
+
+/* Photographic collection, 2026-10-10. Preserve the full-resolution material
+   detail. Portrait photographs share a square crop and an observed 82% base. */
+.catalogue-card img{object-fit:cover;object-position:50% var(--catalogue-position,70%);transform-origin:50% 82%}
+.category-doorways img{aspect-ratio:1;object-fit:cover;object-position:50% var(--catalogue-position,70%)}
+img[src$="catalogue-photo-pot.jpg"]{--catalogue-position:74%;}
+img[src$="catalogue-photo-cup.jpg"]{--catalogue-position:62%;}
+img[src$="catalogue-photo-dish.jpg"]{--catalogue-position:62%;}
+img[src$="catalogue-photo-linen.jpg"]{--catalogue-position:62%;}
+img[src$="catalogue-photo-green.jpg"]{--catalogue-position:50%;}
+img[src$="catalogue-photo-soban.jpg"]{--catalogue-position:100%;}
+img[src$="catalogue-photo-tray.jpg"]{--catalogue-position:50%;}
+img[src$="catalogue-photo-gift.jpg"]{--catalogue-position:50%;}
+
+/* Four reshot products, 2026-10-10. Square originals keep their geometry.
+   Cropping only empty background brings the low spoon/set onto the row base. */
+.catalogue-card img[src$="catalogue-refined-solo.jpg"]{transform:scale(1.13);transform-origin:50% 0}
+.catalogue-card:hover img[src$="catalogue-refined-solo.jpg"]{transform:scale(1.155)}
+.catalogue-card img[src$="catalogue-refined-scoop.jpg"]{transform:scale(1.28);transform-origin:50% 0}
+.catalogue-card:hover img[src$="catalogue-refined-scoop.jpg"]{transform:scale(1.305)}
+
+/* Main-page objects retain a visual link to their original setting. */
+.catalogue-interlude--main{grid-column:span 3;display:grid;grid-template-columns:1.5fr 1fr;align-items:center}
+.catalogue-interlude--main img{height:100%;object-fit:cover}
+.catalogue-interlude--main>div{padding:28px}
+.product-gallery--scene .gallery-copy{margin-top:0;align-self:center}
+@media(max-width:1100px){
+ .catalogue-interlude--main{grid-column:span 2}
+ .catalogue-page:not(.category-page) .catalogue:not(.category-catalogue) .catalogue-card--long-table{grid-column:span 2}
+ .catalogue-page .catalogue:not(.category-catalogue) .catalogue-card--long-table .catalogue-image{aspect-ratio:2/1}
+ .catalogue-page .catalogue:not(.category-catalogue) .catalogue-card--long-table img{object-fit:cover;object-position:50% 70%}
+}
+@media(max-width:760px){.catalogue-interlude--main{display:flex}.catalogue-interlude--main img{height:auto;object-fit:contain}.catalogue-interlude--main>div{padding:24px}}
+
+/* User-curated Midjourney folder, 2026-10-14. */
+img[src$="curated-folder-27.jpg"]{--catalogue-position:62%}
+img[src$="curated-folder-23.jpg"]{--catalogue-position:50%}
+img[src$="curated-folder-22.jpg"]{--catalogue-position:100%}
+img[src$="curated-folder-32.jpg"]{--catalogue-position:74%}
+.catalogue:not(.category-catalogue) .catalogue-interlude--room{position:relative}
+.catalogue:not(.category-catalogue) .catalogue-interlude--room>img{position:absolute;inset:0 auto 0 0;width:50%;height:100%;object-fit:cover;object-position:center bottom}
+.catalogue:not(.category-catalogue) .catalogue-interlude--room>div{grid-column:2}
+.category-catalogue .catalogue-interlude--room>img{aspect-ratio:1;object-fit:cover;object-position:center bottom}

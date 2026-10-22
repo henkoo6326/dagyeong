@@ -1,0 +1,8 @@
+/* 2026-10-18: keep the communal table as the single long furniture silhouette.
+   The desktop lead-in remains empty; compact screens keep a continuous list. */
+@media(min-width:1101px){
+ .catalogue:not(.category-catalogue) .catalogue-card--long-table{grid-column:3 / span 2!important}
+}
+@media(min-width:761px){
+ .category-catalogue .catalogue-card--long-table{grid-column:2 / span 2!important}
+}

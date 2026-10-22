@@ -1,0 +1,8 @@
+/* The adopted B footer, shared by all narrative and commerce depths. */
+.brand-footer{border-top:1px solid #dedede;background:#fff;color:#111;padding:40px 0 32px;display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:140px;max-width:1760px;width:calc(100% - 80px);margin-left:auto;margin-right:auto}
+.brand-footer .foot-purpose>span{display:block;font-size:24px;line-height:1;letter-spacing:-.045em;font-weight:500}
+.brand-footer .foot-purpose p{font-size:20px;line-height:1.35;margin-top:22px}
+.brand-footer .foot-links{display:grid;grid-template-columns:1fr 1fr;gap:15px 30px;align-content:start;font-size:14px;line-height:1.45}
+.brand-footer .foot-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.brand-footer small,.brand-footer .up{font-size:11px;color:#666;line-height:1.5}.brand-footer .up{justify-self:end}
+@media(max-width:760px){.brand-footer{width:calc(100% - 40px);grid-template-columns:1fr;gap:32px;padding-top:32px;margin-top:72px}.brand-footer .up{justify-self:start}.brand-footer .foot-purpose p{font-size:22px}.brand-footer .foot-links{gap:18px 20px}}
